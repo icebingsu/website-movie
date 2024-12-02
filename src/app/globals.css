@@ -91,10 +91,35 @@ body {
     @apply bg-background text-foreground;
   }
 }
+/* container  */
 .container{
   width: 1400px;
   margin: auto;
 }
+* {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none; 
+  -ms-user-select: none;
+}
+
+.allow-select {
+  user-select: text;
+}
+
+
+/* Màu chủ đạo */
+
+.bg-theme {
+  backdrop-filter: blur(10px); 
+  background-color: transparent; 
+  color: #fff; 
+}
+
+
+
+
+
 .swiper-button-next:after, .swiper-button-prev:after {
   font-size: 14px !important; 
   font-family: swiper-icons; 
@@ -111,3 +136,29 @@ body {
   font-size: 16px;
   font-weight: bold;
 }
+/* Định nghĩa animation "sparkleEffect" */
+/* Định nghĩa animation "sparkleEffect" */
+/* Định nghĩa animation "sparkleEffect" */
+@keyframes sparkleEffect {
+  0% {
+    background-position: -200% -200%;
+  }
+  100% {
+    background-position: 200% 200%;
+  }
+}
+
+.hover\:sparkle:hover {
+  background: linear-gradient(45deg, rgba(50, 52, 53, 0.7) 25%);
+  background-size: 200% 200%;
+  animation: sparkleEffect 1.5s linear infinite;
+  box-shadow: 0 0 15px rgba(34, 142, 229, 0.5);
+  backdrop-filter: blur(10px); 
+  background-color: transparent; 
+  border-radius: 10px; 
+}
+.hover\:sparkle {
+  transition: all 0.3s ease;
+}
+
+

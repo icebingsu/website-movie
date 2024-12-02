@@ -1,7 +1,8 @@
 'use client'
-import CarouselSearch from "@/components/home-page/carousel-search";
+import CarouselOutstanding from "@/components/home-page/carousel-outstanding";
 import CarouselHot from "@/components/home-page/carousel-trend";
 import ProfileMovie from "@/components/home-page/profile-movie";
+import SearchCategory from "@/components/home-page/search-category";
 import { ArrowRight } from "lucide-react";
 export default function Home() {
   return (
@@ -32,36 +33,18 @@ export default function Home() {
             <CarouselHot/>
           </div>
       </div>
+      <SearchCategory/>
       <div className="container">
           <div className="pt-10 flex justify-between px-10">
-            <h1 className="text-2xl font-bold">Phim</h1>
+            <h1 className="text-2xl font-bold">Nổi bật</h1>
             <span className="flex items-center gap-3 text-[#228EE5] hover:text-[#1A7DCC] cursor-pointer transition-all duration-300 hover:scale-105">
               <p>Xem tât cả</p> 
               <ArrowRight size="16"/>
             </span>
           </div>
-          <div className="px-10 mt-3">
-            <CarouselSearch/>
-            <div className="mt-10">
-            <CarouselHot/>
-            </div>
-          </div>
+          <CarouselOutstanding/>
       </div>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
+      <div className="h-[500px]"></div>
     </main>
   );
 }

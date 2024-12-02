@@ -81,7 +81,6 @@ export default function ProfileMovie(){
                <span className="text-base">Thông tin phim</span>
                <ArrowRight />
             </button>
-
           </div>
         </div>
         <div
