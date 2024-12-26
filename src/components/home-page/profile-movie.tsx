@@ -69,14 +69,13 @@ export default function ProfileMovie(){
               <Star color={rating >= 4 ? 'gold' : 'gray'} />
               <Star color={rating >= 5 ? 'gold' : 'gray'} />
             </span>
-            <span className="text-sm bg-[#b4ad25] p-1 rounded-xl text-black">IMDB: 9.0</span>
+            <span className="text-sm bg-[#b4ad25] p-1 rounded-xl text-black mt-4">IMDB: 9.0</span>
           </article>
           <div className="flex gap-3 mt-3">
           <button className="border px-3 py-2 rounded-full flex gap-3 items-center bg-[#228EE5] hover:bg-[#1A6CC2] hover:scale-105 transition-all duration-200 ease-in-out">
                <Play size={28} /> 
                <span className="text-base">Xem phim</span>
                </button>
-
                <button className="border border-[#228EE5] px-3 py-2 rounded-full flex gap-3 items-center hover:bg-[#228EE5] hover:text-white hover:scale-105 transition-all duration-200 ease-in-out">
                <span className="text-base">Thông tin phim</span>
                <ArrowRight />
