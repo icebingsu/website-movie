@@ -5,9 +5,10 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation'; 
 import { Pagination, Navigation } from 'swiper/modules';  
 import Image from 'next/image';
-import { MessageCircleHeart, Play, TicketPlus } from 'lucide-react';
-
-export default function CarouselHot() {
+import '@/components/home-page/animation.css'
+import { Clapperboard, Clock3, Languages, MapPin } from 'lucide-react';
+import Link from 'next/link';
+export default function CarouselOutstanding() {
    return (
      <>
        <Swiper
@@ -42,43 +43,968 @@ export default function CarouselHot() {
        >
          <SwiperSlide>
            <div className="relative group w-52 h-auto">
+               <Link href="album/1">
              <div className="relative w-full h-full overflow-hidden">
-               {/* Hình ảnh */}
-               <Image
-                 src="/images/upload/1618301042CTBAF7i4v3cXFfn.jpg"
-                 alt="Slide 1"
-                 width={208}
-                 height={277}
-                 className="rounded-lg w-full h-auto transition-transform transform group-hover:scale-110 duration-300 ease-in-out"
-               />
-               {/* Nền và các nút */}
+                <Image
+                  src="/images/upload/poster-561x800.jpg"
+                  alt="Slide 1"
+                  width={208}
+                  height={277}
+                  className="rounded-sm w-full h-auto transition-transform transform duration-200 ease-in-out"
+                />
+               
                <div
-                 className="absolute top-[80%] left-0 right-0 w-full transform translate-y-full group-hover:translate-y-0 group-hover:scale-110 transition-all duration-500 bg-theme"
-                 style={{ height: '20%' }}
-               >
-                 <div className="flex gap-3 justify-center items-center pt-3">
-                   <button className="bg-[#228EE5] text-white p-1 rounded-full hover:bg-[#1A7DCC]">
-                     <Play size={18} />
-                   </button>
-                   <button className="text-white p-1 rounded-full border-[1px] border-transparent hover:border-[#228EE5]">
-                     <MessageCircleHeart size={18} />
-                   </button>
-                   <button className="text-white p-1 rounded-full border-[1px] border-transparent hover:border-[#228EE5]">
-                     <TicketPlus size={18} />
-                   </button>
-                 </div>
-                
-               </div>
+                  className="absolute top-[0%] left-0 right-0 w-full animationBgMovie transform translate-y-20 group-hover:translate-y-0 transition-transform duration-500  rounded-sm"
+                  style={{ height: '100%' }}
+                >
+                  <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-80 rounded-sm z-10"></div>
+                  
+                  <div className="relative z-20 flex items-center pt-[40%] pl-[20px]">
+                    <div className="flex flex-col gap-3">
+                      <h3 className="font-mono font-bold text-base text-white">Miền bắc(18+)</h3>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clapperboard size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clock3 size={16} className='text-[#228ee5]'/><span>102&prime;</span>                      </span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><MapPin  size={16} className='text-[#228ee5]'/><span>Việt nam</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Languages size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                    </div>
+                  </div>
+                </div>
+
              </div>
               {/* Tên phim */}
-              <div className="text-[14px] mt-3 font-semibold bg-theme  w-full h-[40px] flex justify-center items-center overflow-hidden text-ellipsis hover:text-[#228EE5]"
-               style={{
-                  display: "-webkit-box",
-                  WebkitBoxOrient: "vertical",
-                  WebkitLineClamp: 2
-               }}>
-               Jack And Joker: Người Đánh Cắp Trái Tim Tôi!
+                <div className="text-[14px] mt-3 font-semibold bg-theme  w-full h-[40px] flex justify-center items-center overflow-hidden text-ellipsis hover:text-[#228EE5]"
+                style={{
+                    display: "-webkit-box",
+                    WebkitBoxOrient: "vertical",            
+                    WebkitLineClamp: 2
+                }}>
+                Jack And Joker: Người Đánh Cắp Trái Tim Tôi!
                </div>
+               </Link>
+           </div>
+          </SwiperSlide>
+         <SwiperSlide>
+           <div className="relative group w-52 h-auto">
+               <Link href="album/1">
+             <div className="relative w-full h-full overflow-hidden">
+                <Image
+                  src="/images/upload/poster-561x800.jpg"
+                  alt="Slide 1"
+                  width={208}
+                  height={277}
+                  className="rounded-sm w-full h-auto transition-transform transform duration-200 ease-in-out"
+                />
+               
+               <div
+                  className="absolute top-[0%] left-0 right-0 w-full animationBgMovie transform translate-y-20 group-hover:translate-y-0 transition-transform duration-500  rounded-sm"
+                  style={{ height: '100%' }}
+                >
+                  <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-80 rounded-sm z-10"></div>
+                  
+                  <div className="relative z-20 flex items-center pt-[40%] pl-[20px]">
+                    <div className="flex flex-col gap-3">
+                      <h3 className="font-mono font-bold text-base text-white">Miền bắc(18+)</h3>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clapperboard size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clock3 size={16} className='text-[#228ee5]'/><span>102&prime;</span>                      </span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><MapPin  size={16} className='text-[#228ee5]'/><span>Việt nam</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Languages size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                    </div>
+                  </div>
+                </div>
+
+             </div>
+              {/* Tên phim */}
+                <div className="text-[14px] mt-3 font-semibold bg-theme  w-full h-[40px] flex justify-center items-center overflow-hidden text-ellipsis hover:text-[#228EE5]"
+                style={{
+                    display: "-webkit-box",
+                    WebkitBoxOrient: "vertical",            
+                    WebkitLineClamp: 2
+                }}>
+                Jack And Joker: Người Đánh Cắp Trái Tim Tôi!
+               </div>
+               </Link>
+           </div>
+          </SwiperSlide>
+         <SwiperSlide>
+           <div className="relative group w-52 h-auto">
+               <Link href="album/1">
+             <div className="relative w-full h-full overflow-hidden">
+                <Image
+                  src="/images/upload/poster-561x800.jpg"
+                  alt="Slide 1"
+                  width={208}
+                  height={277}
+                  className="rounded-sm w-full h-auto transition-transform transform duration-200 ease-in-out"
+                />
+               
+               <div
+                  className="absolute top-[0%] left-0 right-0 w-full animationBgMovie transform translate-y-20 group-hover:translate-y-0 transition-transform duration-500  rounded-sm"
+                  style={{ height: '100%' }}
+                >
+                  <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-80 rounded-sm z-10"></div>
+                  
+                  <div className="relative z-20 flex items-center pt-[40%] pl-[20px]">
+                    <div className="flex flex-col gap-3">
+                      <h3 className="font-mono font-bold text-base text-white">Miền bắc(18+)</h3>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clapperboard size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clock3 size={16} className='text-[#228ee5]'/><span>102&prime;</span>                      </span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><MapPin  size={16} className='text-[#228ee5]'/><span>Việt nam</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Languages size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                    </div>
+                  </div>
+                </div>
+
+             </div>
+              {/* Tên phim */}
+                <div className="text-[14px] mt-3 font-semibold bg-theme  w-full h-[40px] flex justify-center items-center overflow-hidden text-ellipsis hover:text-[#228EE5]"
+                style={{
+                    display: "-webkit-box",
+                    WebkitBoxOrient: "vertical",            
+                    WebkitLineClamp: 2
+                }}>
+                Jack And Joker: Người Đánh Cắp Trái Tim Tôi!
+               </div>
+               </Link>
+           </div>
+          </SwiperSlide>
+         <SwiperSlide>
+           <div className="relative group w-52 h-auto">
+               <Link href="album/1">
+             <div className="relative w-full h-full overflow-hidden">
+                <Image
+                  src="/images/upload/poster-561x800.jpg"
+                  alt="Slide 1"
+                  width={208}
+                  height={277}
+                  className="rounded-sm w-full h-auto transition-transform transform duration-200 ease-in-out"
+                />
+               
+               <div
+                  className="absolute top-[0%] left-0 right-0 w-full animationBgMovie transform translate-y-20 group-hover:translate-y-0 transition-transform duration-500  rounded-sm"
+                  style={{ height: '100%' }}
+                >
+                  <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-80 rounded-sm z-10"></div>
+                  
+                  <div className="relative z-20 flex items-center pt-[40%] pl-[20px]">
+                    <div className="flex flex-col gap-3">
+                      <h3 className="font-mono font-bold text-base text-white">Miền bắc(18+)</h3>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clapperboard size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clock3 size={16} className='text-[#228ee5]'/><span>102&prime;</span>                      </span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><MapPin  size={16} className='text-[#228ee5]'/><span>Việt nam</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Languages size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                    </div>
+                  </div>
+                </div>
+
+             </div>
+              {/* Tên phim */}
+                <div className="text-[14px] mt-3 font-semibold bg-theme  w-full h-[40px] flex justify-center items-center overflow-hidden text-ellipsis hover:text-[#228EE5]"
+                style={{
+                    display: "-webkit-box",
+                    WebkitBoxOrient: "vertical",            
+                    WebkitLineClamp: 2
+                }}>
+                Jack And Joker: Người Đánh Cắp Trái Tim Tôi!
+               </div>
+               </Link>
+           </div>
+          </SwiperSlide>
+         <SwiperSlide>
+           <div className="relative group w-52 h-auto">
+               <Link href="album/1">
+             <div className="relative w-full h-full overflow-hidden">
+                <Image
+                  src="/images/upload/poster-561x800.jpg"
+                  alt="Slide 1"
+                  width={208}
+                  height={277}
+                  className="rounded-sm w-full h-auto transition-transform transform duration-200 ease-in-out"
+                />
+               
+               <div
+                  className="absolute top-[0%] left-0 right-0 w-full animationBgMovie transform translate-y-20 group-hover:translate-y-0 transition-transform duration-500  rounded-sm"
+                  style={{ height: '100%' }}
+                >
+                  <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-80 rounded-sm z-10"></div>
+                  
+                  <div className="relative z-20 flex items-center pt-[40%] pl-[20px]">
+                    <div className="flex flex-col gap-3">
+                      <h3 className="font-mono font-bold text-base text-white">Miền bắc(18+)</h3>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clapperboard size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clock3 size={16} className='text-[#228ee5]'/><span>102&prime;</span>                      </span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><MapPin  size={16} className='text-[#228ee5]'/><span>Việt nam</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Languages size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                    </div>
+                  </div>
+                </div>
+
+             </div>
+              {/* Tên phim */}
+                <div className="text-[14px] mt-3 font-semibold bg-theme  w-full h-[40px] flex justify-center items-center overflow-hidden text-ellipsis hover:text-[#228EE5]"
+                style={{
+                    display: "-webkit-box",
+                    WebkitBoxOrient: "vertical",            
+                    WebkitLineClamp: 2
+                }}>
+                Jack And Joker: Người Đánh Cắp Trái Tim Tôi!
+               </div>
+               </Link>
+           </div>
+          </SwiperSlide>
+         <SwiperSlide>
+           <div className="relative group w-52 h-auto">
+               <Link href="album/1">
+             <div className="relative w-full h-full overflow-hidden">
+                <Image
+                  src="/images/upload/poster-561x800.jpg"
+                  alt="Slide 1"
+                  width={208}
+                  height={277}
+                  className="rounded-sm w-full h-auto transition-transform transform duration-200 ease-in-out"
+                />
+               
+               <div
+                  className="absolute top-[0%] left-0 right-0 w-full animationBgMovie transform translate-y-20 group-hover:translate-y-0 transition-transform duration-500  rounded-sm"
+                  style={{ height: '100%' }}
+                >
+                  <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-80 rounded-sm z-10"></div>
+                  
+                  <div className="relative z-20 flex items-center pt-[40%] pl-[20px]">
+                    <div className="flex flex-col gap-3">
+                      <h3 className="font-mono font-bold text-base text-white">Miền bắc(18+)</h3>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clapperboard size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clock3 size={16} className='text-[#228ee5]'/><span>102&prime;</span>                      </span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><MapPin  size={16} className='text-[#228ee5]'/><span>Việt nam</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Languages size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                    </div>
+                  </div>
+                </div>
+
+             </div>
+              {/* Tên phim */}
+                <div className="text-[14px] mt-3 font-semibold bg-theme  w-full h-[40px] flex justify-center items-center overflow-hidden text-ellipsis hover:text-[#228EE5]"
+                style={{
+                    display: "-webkit-box",
+                    WebkitBoxOrient: "vertical",            
+                    WebkitLineClamp: 2
+                }}>
+                Jack And Joker: Người Đánh Cắp Trái Tim Tôi!
+               </div>
+               </Link>
+           </div>
+          </SwiperSlide>
+         <SwiperSlide>
+           <div className="relative group w-52 h-auto">
+               <Link href="album/1">
+             <div className="relative w-full h-full overflow-hidden">
+                <Image
+                  src="/images/upload/poster-561x800.jpg"
+                  alt="Slide 1"
+                  width={208}
+                  height={277}
+                  className="rounded-sm w-full h-auto transition-transform transform duration-200 ease-in-out"
+                />
+               
+               <div
+                  className="absolute top-[0%] left-0 right-0 w-full animationBgMovie transform translate-y-20 group-hover:translate-y-0 transition-transform duration-500  rounded-sm"
+                  style={{ height: '100%' }}
+                >
+                  <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-80 rounded-sm z-10"></div>
+                  
+                  <div className="relative z-20 flex items-center pt-[40%] pl-[20px]">
+                    <div className="flex flex-col gap-3">
+                      <h3 className="font-mono font-bold text-base text-white">Miền bắc(18+)</h3>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clapperboard size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clock3 size={16} className='text-[#228ee5]'/><span>102&prime;</span>                      </span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><MapPin  size={16} className='text-[#228ee5]'/><span>Việt nam</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Languages size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                    </div>
+                  </div>
+                </div>
+
+             </div>
+              {/* Tên phim */}
+                <div className="text-[14px] mt-3 font-semibold bg-theme  w-full h-[40px] flex justify-center items-center overflow-hidden text-ellipsis hover:text-[#228EE5]"
+                style={{
+                    display: "-webkit-box",
+                    WebkitBoxOrient: "vertical",            
+                    WebkitLineClamp: 2
+                }}>
+                Jack And Joker: Người Đánh Cắp Trái Tim Tôi!
+               </div>
+               </Link>
+           </div>
+          </SwiperSlide>
+         <SwiperSlide>
+           <div className="relative group w-52 h-auto">
+               <Link href="album/1">
+             <div className="relative w-full h-full overflow-hidden">
+                <Image
+                  src="/images/upload/poster-561x800.jpg"
+                  alt="Slide 1"
+                  width={208}
+                  height={277}
+                  className="rounded-sm w-full h-auto transition-transform transform duration-200 ease-in-out"
+                />
+               
+               <div
+                  className="absolute top-[0%] left-0 right-0 w-full animationBgMovie transform translate-y-20 group-hover:translate-y-0 transition-transform duration-500  rounded-sm"
+                  style={{ height: '100%' }}
+                >
+                  <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-80 rounded-sm z-10"></div>
+                  
+                  <div className="relative z-20 flex items-center pt-[40%] pl-[20px]">
+                    <div className="flex flex-col gap-3">
+                      <h3 className="font-mono font-bold text-base text-white">Miền bắc(18+)</h3>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clapperboard size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clock3 size={16} className='text-[#228ee5]'/><span>102&prime;</span>                      </span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><MapPin  size={16} className='text-[#228ee5]'/><span>Việt nam</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Languages size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                    </div>
+                  </div>
+                </div>
+
+             </div>
+              {/* Tên phim */}
+                <div className="text-[14px] mt-3 font-semibold bg-theme  w-full h-[40px] flex justify-center items-center overflow-hidden text-ellipsis hover:text-[#228EE5]"
+                style={{
+                    display: "-webkit-box",
+                    WebkitBoxOrient: "vertical",            
+                    WebkitLineClamp: 2
+                }}>
+                Jack And Joker: Người Đánh Cắp Trái Tim Tôi!
+               </div>
+               </Link>
+           </div>
+          </SwiperSlide>
+         <SwiperSlide>
+           <div className="relative group w-52 h-auto">
+               <Link href="album/1">
+             <div className="relative w-full h-full overflow-hidden">
+                <Image
+                  src="/images/upload/poster-561x800.jpg"
+                  alt="Slide 1"
+                  width={208}
+                  height={277}
+                  className="rounded-sm w-full h-auto transition-transform transform duration-200 ease-in-out"
+                />
+               
+               <div
+                  className="absolute top-[0%] left-0 right-0 w-full animationBgMovie transform translate-y-20 group-hover:translate-y-0 transition-transform duration-500  rounded-sm"
+                  style={{ height: '100%' }}
+                >
+                  <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-80 rounded-sm z-10"></div>
+                  
+                  <div className="relative z-20 flex items-center pt-[40%] pl-[20px]">
+                    <div className="flex flex-col gap-3">
+                      <h3 className="font-mono font-bold text-base text-white">Miền bắc(18+)</h3>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clapperboard size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clock3 size={16} className='text-[#228ee5]'/><span>102&prime;</span>                      </span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><MapPin  size={16} className='text-[#228ee5]'/><span>Việt nam</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Languages size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                    </div>
+                  </div>
+                </div>
+
+             </div>
+              {/* Tên phim */}
+                <div className="text-[14px] mt-3 font-semibold bg-theme  w-full h-[40px] flex justify-center items-center overflow-hidden text-ellipsis hover:text-[#228EE5]"
+                style={{
+                    display: "-webkit-box",
+                    WebkitBoxOrient: "vertical",            
+                    WebkitLineClamp: 2
+                }}>
+                Jack And Joker: Người Đánh Cắp Trái Tim Tôi!
+               </div>
+               </Link>
+           </div>
+          </SwiperSlide>
+         <SwiperSlide>
+           <div className="relative group w-52 h-auto">
+               <Link href="album/1">
+             <div className="relative w-full h-full overflow-hidden">
+                <Image
+                  src="/images/upload/poster-561x800.jpg"
+                  alt="Slide 1"
+                  width={208}
+                  height={277}
+                  className="rounded-sm w-full h-auto transition-transform transform duration-200 ease-in-out"
+                />
+               
+               <div
+                  className="absolute top-[0%] left-0 right-0 w-full animationBgMovie transform translate-y-20 group-hover:translate-y-0 transition-transform duration-500  rounded-sm"
+                  style={{ height: '100%' }}
+                >
+                  <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-80 rounded-sm z-10"></div>
+                  
+                  <div className="relative z-20 flex items-center pt-[40%] pl-[20px]">
+                    <div className="flex flex-col gap-3">
+                      <h3 className="font-mono font-bold text-base text-white">Miền bắc(18+)</h3>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clapperboard size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clock3 size={16} className='text-[#228ee5]'/><span>102&prime;</span>                      </span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><MapPin  size={16} className='text-[#228ee5]'/><span>Việt nam</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Languages size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                    </div>
+                  </div>
+                </div>
+
+             </div>
+              {/* Tên phim */}
+                <div className="text-[14px] mt-3 font-semibold bg-theme  w-full h-[40px] flex justify-center items-center overflow-hidden text-ellipsis hover:text-[#228EE5]"
+                style={{
+                    display: "-webkit-box",
+                    WebkitBoxOrient: "vertical",            
+                    WebkitLineClamp: 2
+                }}>
+                Jack And Joker: Người Đánh Cắp Trái Tim Tôi!
+               </div>
+               </Link>
+           </div>
+          </SwiperSlide>
+         <SwiperSlide>
+           <div className="relative group w-52 h-auto">
+               <Link href="album/1">
+             <div className="relative w-full h-full overflow-hidden">
+                <Image
+                  src="/images/upload/poster-561x800.jpg"
+                  alt="Slide 1"
+                  width={208}
+                  height={277}
+                  className="rounded-sm w-full h-auto transition-transform transform duration-200 ease-in-out"
+                />
+               
+               <div
+                  className="absolute top-[0%] left-0 right-0 w-full animationBgMovie transform translate-y-20 group-hover:translate-y-0 transition-transform duration-500  rounded-sm"
+                  style={{ height: '100%' }}
+                >
+                  <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-80 rounded-sm z-10"></div>
+                  
+                  <div className="relative z-20 flex items-center pt-[40%] pl-[20px]">
+                    <div className="flex flex-col gap-3">
+                      <h3 className="font-mono font-bold text-base text-white">Miền bắc(18+)</h3>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clapperboard size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clock3 size={16} className='text-[#228ee5]'/><span>102&prime;</span>                      </span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><MapPin  size={16} className='text-[#228ee5]'/><span>Việt nam</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Languages size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                    </div>
+                  </div>
+                </div>
+
+             </div>
+              {/* Tên phim */}
+                <div className="text-[14px] mt-3 font-semibold bg-theme  w-full h-[40px] flex justify-center items-center overflow-hidden text-ellipsis hover:text-[#228EE5]"
+                style={{
+                    display: "-webkit-box",
+                    WebkitBoxOrient: "vertical",            
+                    WebkitLineClamp: 2
+                }}>
+                Jack And Joker: Người Đánh Cắp Trái Tim Tôi!
+               </div>
+               </Link>
+           </div>
+          </SwiperSlide>
+         <SwiperSlide>
+           <div className="relative group w-52 h-auto">
+               <Link href="album/1">
+             <div className="relative w-full h-full overflow-hidden">
+                <Image
+                  src="/images/upload/poster-561x800.jpg"
+                  alt="Slide 1"
+                  width={208}
+                  height={277}
+                  className="rounded-sm w-full h-auto transition-transform transform duration-200 ease-in-out"
+                />
+               
+               <div
+                  className="absolute top-[0%] left-0 right-0 w-full animationBgMovie transform translate-y-20 group-hover:translate-y-0 transition-transform duration-500  rounded-sm"
+                  style={{ height: '100%' }}
+                >
+                  <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-80 rounded-sm z-10"></div>
+                  
+                  <div className="relative z-20 flex items-center pt-[40%] pl-[20px]">
+                    <div className="flex flex-col gap-3">
+                      <h3 className="font-mono font-bold text-base text-white">Miền bắc(18+)</h3>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clapperboard size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clock3 size={16} className='text-[#228ee5]'/><span>102&prime;</span>                      </span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><MapPin  size={16} className='text-[#228ee5]'/><span>Việt nam</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Languages size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                    </div>
+                  </div>
+                </div>
+
+             </div>
+              {/* Tên phim */}
+                <div className="text-[14px] mt-3 font-semibold bg-theme  w-full h-[40px] flex justify-center items-center overflow-hidden text-ellipsis hover:text-[#228EE5]"
+                style={{
+                    display: "-webkit-box",
+                    WebkitBoxOrient: "vertical",            
+                    WebkitLineClamp: 2
+                }}>
+                Jack And Joker: Người Đánh Cắp Trái Tim Tôi!
+               </div>
+               </Link>
+           </div>
+          </SwiperSlide>
+         <SwiperSlide>
+           <div className="relative group w-52 h-auto">
+               <Link href="album/1">
+             <div className="relative w-full h-full overflow-hidden">
+                <Image
+                  src="/images/upload/poster-561x800.jpg"
+                  alt="Slide 1"
+                  width={208}
+                  height={277}
+                  className="rounded-sm w-full h-auto transition-transform transform duration-200 ease-in-out"
+                />
+               
+               <div
+                  className="absolute top-[0%] left-0 right-0 w-full animationBgMovie transform translate-y-20 group-hover:translate-y-0 transition-transform duration-500  rounded-sm"
+                  style={{ height: '100%' }}
+                >
+                  <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-80 rounded-sm z-10"></div>
+                  
+                  <div className="relative z-20 flex items-center pt-[40%] pl-[20px]">
+                    <div className="flex flex-col gap-3">
+                      <h3 className="font-mono font-bold text-base text-white">Miền bắc(18+)</h3>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clapperboard size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clock3 size={16} className='text-[#228ee5]'/><span>102&prime;</span>                      </span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><MapPin  size={16} className='text-[#228ee5]'/><span>Việt nam</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Languages size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                    </div>
+                  </div>
+                </div>
+
+             </div>
+              {/* Tên phim */}
+                <div className="text-[14px] mt-3 font-semibold bg-theme  w-full h-[40px] flex justify-center items-center overflow-hidden text-ellipsis hover:text-[#228EE5]"
+                style={{
+                    display: "-webkit-box",
+                    WebkitBoxOrient: "vertical",            
+                    WebkitLineClamp: 2
+                }}>
+                Jack And Joker: Người Đánh Cắp Trái Tim Tôi!
+               </div>
+               </Link>
+           </div>
+          </SwiperSlide>
+         <SwiperSlide>
+           <div className="relative group w-52 h-auto">
+               <Link href="album/1">
+             <div className="relative w-full h-full overflow-hidden">
+                <Image
+                  src="/images/upload/poster-561x800.jpg"
+                  alt="Slide 1"
+                  width={208}
+                  height={277}
+                  className="rounded-sm w-full h-auto transition-transform transform duration-200 ease-in-out"
+                />
+               
+               <div
+                  className="absolute top-[0%] left-0 right-0 w-full animationBgMovie transform translate-y-20 group-hover:translate-y-0 transition-transform duration-500  rounded-sm"
+                  style={{ height: '100%' }}
+                >
+                  <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-80 rounded-sm z-10"></div>
+                  
+                  <div className="relative z-20 flex items-center pt-[40%] pl-[20px]">
+                    <div className="flex flex-col gap-3">
+                      <h3 className="font-mono font-bold text-base text-white">Miền bắc(18+)</h3>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clapperboard size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clock3 size={16} className='text-[#228ee5]'/><span>102&prime;</span>                      </span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><MapPin  size={16} className='text-[#228ee5]'/><span>Việt nam</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Languages size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                    </div>
+                  </div>
+                </div>
+
+             </div>
+              {/* Tên phim */}
+                <div className="text-[14px] mt-3 font-semibold bg-theme  w-full h-[40px] flex justify-center items-center overflow-hidden text-ellipsis hover:text-[#228EE5]"
+                style={{
+                    display: "-webkit-box",
+                    WebkitBoxOrient: "vertical",            
+                    WebkitLineClamp: 2
+                }}>
+                Jack And Joker: Người Đánh Cắp Trái Tim Tôi!
+               </div>
+               </Link>
+           </div>
+          </SwiperSlide>
+         <SwiperSlide>
+           <div className="relative group w-52 h-auto">
+               <Link href="album/1">
+             <div className="relative w-full h-full overflow-hidden">
+                <Image
+                  src="/images/upload/poster-561x800.jpg"
+                  alt="Slide 1"
+                  width={208}
+                  height={277}
+                  className="rounded-sm w-full h-auto transition-transform transform duration-200 ease-in-out"
+                />
+               
+               <div
+                  className="absolute top-[0%] left-0 right-0 w-full animationBgMovie transform translate-y-20 group-hover:translate-y-0 transition-transform duration-500  rounded-sm"
+                  style={{ height: '100%' }}
+                >
+                  <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-80 rounded-sm z-10"></div>
+                  
+                  <div className="relative z-20 flex items-center pt-[40%] pl-[20px]">
+                    <div className="flex flex-col gap-3">
+                      <h3 className="font-mono font-bold text-base text-white">Miền bắc(18+)</h3>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clapperboard size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clock3 size={16} className='text-[#228ee5]'/><span>102&prime;</span>                      </span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><MapPin  size={16} className='text-[#228ee5]'/><span>Việt nam</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Languages size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                    </div>
+                  </div>
+                </div>
+
+             </div>
+              {/* Tên phim */}
+                <div className="text-[14px] mt-3 font-semibold bg-theme  w-full h-[40px] flex justify-center items-center overflow-hidden text-ellipsis hover:text-[#228EE5]"
+                style={{
+                    display: "-webkit-box",
+                    WebkitBoxOrient: "vertical",            
+                    WebkitLineClamp: 2
+                }}>
+                Jack And Joker: Người Đánh Cắp Trái Tim Tôi!
+               </div>
+               </Link>
+           </div>
+          </SwiperSlide>
+         <SwiperSlide>
+           <div className="relative group w-52 h-auto">
+               <Link href="album/1">
+             <div className="relative w-full h-full overflow-hidden">
+                <Image
+                  src="/images/upload/poster-561x800.jpg"
+                  alt="Slide 1"
+                  width={208}
+                  height={277}
+                  className="rounded-sm w-full h-auto transition-transform transform duration-200 ease-in-out"
+                />
+               
+               <div
+                  className="absolute top-[0%] left-0 right-0 w-full animationBgMovie transform translate-y-20 group-hover:translate-y-0 transition-transform duration-500  rounded-sm"
+                  style={{ height: '100%' }}
+                >
+                  <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-80 rounded-sm z-10"></div>
+                  
+                  <div className="relative z-20 flex items-center pt-[40%] pl-[20px]">
+                    <div className="flex flex-col gap-3">
+                      <h3 className="font-mono font-bold text-base text-white">Miền bắc(18+)</h3>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clapperboard size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clock3 size={16} className='text-[#228ee5]'/><span>102&prime;</span>                      </span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><MapPin  size={16} className='text-[#228ee5]'/><span>Việt nam</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Languages size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                    </div>
+                  </div>
+                </div>
+
+             </div>
+              {/* Tên phim */}
+                <div className="text-[14px] mt-3 font-semibold bg-theme  w-full h-[40px] flex justify-center items-center overflow-hidden text-ellipsis hover:text-[#228EE5]"
+                style={{
+                    display: "-webkit-box",
+                    WebkitBoxOrient: "vertical",            
+                    WebkitLineClamp: 2
+                }}>
+                Jack And Joker: Người Đánh Cắp Trái Tim Tôi!
+               </div>
+               </Link>
+           </div>
+          </SwiperSlide>
+         <SwiperSlide>
+           <div className="relative group w-52 h-auto">
+               <Link href="album/1">
+             <div className="relative w-full h-full overflow-hidden">
+                <Image
+                  src="/images/upload/poster-561x800.jpg"
+                  alt="Slide 1"
+                  width={208}
+                  height={277}
+                  className="rounded-sm w-full h-auto transition-transform transform duration-200 ease-in-out"
+                />
+               
+               <div
+                  className="absolute top-[0%] left-0 right-0 w-full animationBgMovie transform translate-y-20 group-hover:translate-y-0 transition-transform duration-500  rounded-sm"
+                  style={{ height: '100%' }}
+                >
+                  <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-80 rounded-sm z-10"></div>
+                  
+                  <div className="relative z-20 flex items-center pt-[40%] pl-[20px]">
+                    <div className="flex flex-col gap-3">
+                      <h3 className="font-mono font-bold text-base text-white">Miền bắc(18+)</h3>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clapperboard size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clock3 size={16} className='text-[#228ee5]'/><span>102&prime;</span>                      </span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><MapPin  size={16} className='text-[#228ee5]'/><span>Việt nam</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Languages size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                    </div>
+                  </div>
+                </div>
+
+             </div>
+              {/* Tên phim */}
+                <div className="text-[14px] mt-3 font-semibold bg-theme  w-full h-[40px] flex justify-center items-center overflow-hidden text-ellipsis hover:text-[#228EE5]"
+                style={{
+                    display: "-webkit-box",
+                    WebkitBoxOrient: "vertical",            
+                    WebkitLineClamp: 2
+                }}>
+                Jack And Joker: Người Đánh Cắp Trái Tim Tôi!
+               </div>
+               </Link>
+           </div>
+          </SwiperSlide>
+         <SwiperSlide>
+           <div className="relative group w-52 h-auto">
+               <Link href="album/1">
+             <div className="relative w-full h-full overflow-hidden">
+                <Image
+                  src="/images/upload/poster-561x800.jpg"
+                  alt="Slide 1"
+                  width={208}
+                  height={277}
+                  className="rounded-sm w-full h-auto transition-transform transform duration-200 ease-in-out"
+                />
+               
+               <div
+                  className="absolute top-[0%] left-0 right-0 w-full animationBgMovie transform translate-y-20 group-hover:translate-y-0 transition-transform duration-500  rounded-sm"
+                  style={{ height: '100%' }}
+                >
+                  <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-80 rounded-sm z-10"></div>
+                  
+                  <div className="relative z-20 flex items-center pt-[40%] pl-[20px]">
+                    <div className="flex flex-col gap-3">
+                      <h3 className="font-mono font-bold text-base text-white">Miền bắc(18+)</h3>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clapperboard size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clock3 size={16} className='text-[#228ee5]'/><span>102&prime;</span>                      </span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><MapPin  size={16} className='text-[#228ee5]'/><span>Việt nam</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Languages size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                    </div>
+                  </div>
+                </div>
+
+             </div>
+              {/* Tên phim */}
+                <div className="text-[14px] mt-3 font-semibold bg-theme  w-full h-[40px] flex justify-center items-center overflow-hidden text-ellipsis hover:text-[#228EE5]"
+                style={{
+                    display: "-webkit-box",
+                    WebkitBoxOrient: "vertical",            
+                    WebkitLineClamp: 2
+                }}>
+                Jack And Joker: Người Đánh Cắp Trái Tim Tôi!
+               </div>
+               </Link>
+           </div>
+          </SwiperSlide>
+         <SwiperSlide>
+           <div className="relative group w-52 h-auto">
+               <Link href="album/1">
+             <div className="relative w-full h-full overflow-hidden">
+                <Image
+                  src="/images/upload/poster-561x800.jpg"
+                  alt="Slide 1"
+                  width={208}
+                  height={277}
+                  className="rounded-sm w-full h-auto transition-transform transform duration-200 ease-in-out"
+                />
+               
+               <div
+                  className="absolute top-[0%] left-0 right-0 w-full animationBgMovie transform translate-y-20 group-hover:translate-y-0 transition-transform duration-500  rounded-sm"
+                  style={{ height: '100%' }}
+                >
+                  <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-80 rounded-sm z-10"></div>
+                  
+                  <div className="relative z-20 flex items-center pt-[40%] pl-[20px]">
+                    <div className="flex flex-col gap-3">
+                      <h3 className="font-mono font-bold text-base text-white">Miền bắc(18+)</h3>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clapperboard size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clock3 size={16} className='text-[#228ee5]'/><span>102&prime;</span>                      </span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><MapPin  size={16} className='text-[#228ee5]'/><span>Việt nam</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Languages size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                    </div>
+                  </div>
+                </div>
+
+             </div>
+              {/* Tên phim */}
+                <div className="text-[14px] mt-3 font-semibold bg-theme  w-full h-[40px] flex justify-center items-center overflow-hidden text-ellipsis hover:text-[#228EE5]"
+                style={{
+                    display: "-webkit-box",
+                    WebkitBoxOrient: "vertical",            
+                    WebkitLineClamp: 2
+                }}>
+                Jack And Joker: Người Đánh Cắp Trái Tim Tôi!
+               </div>
+               </Link>
+           </div>
+          </SwiperSlide>
+         <SwiperSlide>
+           <div className="relative group w-52 h-auto">
+               <Link href="album/1">
+             <div className="relative w-full h-full overflow-hidden">
+                <Image
+                  src="/images/upload/poster-561x800.jpg"
+                  alt="Slide 1"
+                  width={208}
+                  height={277}
+                  className="rounded-sm w-full h-auto transition-transform transform duration-200 ease-in-out"
+                />
+               
+               <div
+                  className="absolute top-[0%] left-0 right-0 w-full animationBgMovie transform translate-y-20 group-hover:translate-y-0 transition-transform duration-500  rounded-sm"
+                  style={{ height: '100%' }}
+                >
+                  <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-80 rounded-sm z-10"></div>
+                  
+                  <div className="relative z-20 flex items-center pt-[40%] pl-[20px]">
+                    <div className="flex flex-col gap-3">
+                      <h3 className="font-mono font-bold text-base text-white">Miền bắc(18+)</h3>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clapperboard size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clock3 size={16} className='text-[#228ee5]'/><span>102&prime;</span>                      </span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><MapPin  size={16} className='text-[#228ee5]'/><span>Việt nam</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Languages size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                    </div>
+                  </div>
+                </div>
+
+             </div>
+              {/* Tên phim */}
+                <div className="text-[14px] mt-3 font-semibold bg-theme  w-full h-[40px] flex justify-center items-center overflow-hidden text-ellipsis hover:text-[#228EE5]"
+                style={{
+                    display: "-webkit-box",
+                    WebkitBoxOrient: "vertical",            
+                    WebkitLineClamp: 2
+                }}>
+                Jack And Joker: Người Đánh Cắp Trái Tim Tôi!
+               </div>
+               </Link>
+           </div>
+          </SwiperSlide>
+         <SwiperSlide>
+           <div className="relative group w-52 h-auto">
+               <Link href="album/1">
+             <div className="relative w-full h-full overflow-hidden">
+                <Image
+                  src="/images/upload/poster-561x800.jpg"
+                  alt="Slide 1"
+                  width={208}
+                  height={277}
+                  className="rounded-sm w-full h-auto transition-transform transform duration-200 ease-in-out"
+                />
+               
+               <div
+                  className="absolute top-[0%] left-0 right-0 w-full animationBgMovie transform translate-y-20 group-hover:translate-y-0 transition-transform duration-500  rounded-sm"
+                  style={{ height: '100%' }}
+                >
+                  <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-80 rounded-sm z-10"></div>
+                  
+                  <div className="relative z-20 flex items-center pt-[40%] pl-[20px]">
+                    <div className="flex flex-col gap-3">
+                      <h3 className="font-mono font-bold text-base text-white">Miền bắc(18+)</h3>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clapperboard size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clock3 size={16} className='text-[#228ee5]'/><span>102&prime;</span>                      </span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><MapPin  size={16} className='text-[#228ee5]'/><span>Việt nam</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Languages size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                    </div>
+                  </div>
+                </div>
+
+             </div>
+              {/* Tên phim */}
+                <div className="text-[14px] mt-3 font-semibold bg-theme  w-full h-[40px] flex justify-center items-center overflow-hidden text-ellipsis hover:text-[#228EE5]"
+                style={{
+                    display: "-webkit-box",
+                    WebkitBoxOrient: "vertical",            
+                    WebkitLineClamp: 2
+                }}>
+                Jack And Joker: Người Đánh Cắp Trái Tim Tôi!
+               </div>
+               </Link>
+           </div>
+          </SwiperSlide>
+         <SwiperSlide>
+           <div className="relative group w-52 h-auto">
+               <Link href="album/1">
+             <div className="relative w-full h-full overflow-hidden">
+                <Image
+                  src="/images/upload/poster-561x800.jpg"
+                  alt="Slide 1"
+                  width={208}
+                  height={277}
+                  className="rounded-sm w-full h-auto transition-transform transform duration-200 ease-in-out"
+                />
+               
+               <div
+                  className="absolute top-[0%] left-0 right-0 w-full animationBgMovie transform translate-y-20 group-hover:translate-y-0 transition-transform duration-500  rounded-sm"
+                  style={{ height: '100%' }}
+                >
+                  <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-80 rounded-sm z-10"></div>
+                  
+                  <div className="relative z-20 flex items-center pt-[40%] pl-[20px]">
+                    <div className="flex flex-col gap-3">
+                      <h3 className="font-mono font-bold text-base text-white">Miền bắc(18+)</h3>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clapperboard size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clock3 size={16} className='text-[#228ee5]'/><span>102&prime;</span>                      </span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><MapPin  size={16} className='text-[#228ee5]'/><span>Việt nam</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Languages size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                    </div>
+                  </div>
+                </div>
+
+             </div>
+              {/* Tên phim */}
+                <div className="text-[14px] mt-3 font-semibold bg-theme  w-full h-[40px] flex justify-center items-center overflow-hidden text-ellipsis hover:text-[#228EE5]"
+                style={{
+                    display: "-webkit-box",
+                    WebkitBoxOrient: "vertical",            
+                    WebkitLineClamp: 2
+                }}>
+                Jack And Joker: Người Đánh Cắp Trái Tim Tôi!
+               </div>
+               </Link>
+           </div>
+          </SwiperSlide>
+         <SwiperSlide>
+           <div className="relative group w-52 h-auto">
+               <Link href="album/1">
+             <div className="relative w-full h-full overflow-hidden">
+                <Image
+                  src="/images/upload/poster-561x800.jpg"
+                  alt="Slide 1"
+                  width={208}
+                  height={277}
+                  className="rounded-sm w-full h-auto transition-transform transform duration-200 ease-in-out"
+                />
+               
+               <div
+                  className="absolute top-[0%] left-0 right-0 w-full animationBgMovie transform translate-y-20 group-hover:translate-y-0 transition-transform duration-500  rounded-sm"
+                  style={{ height: '100%' }}
+                >
+                  <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-80 rounded-sm z-10"></div>
+                  
+                  <div className="relative z-20 flex items-center pt-[40%] pl-[20px]">
+                    <div className="flex flex-col gap-3">
+                      <h3 className="font-mono font-bold text-base text-white">Miền bắc(18+)</h3>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clapperboard size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Clock3 size={16} className='text-[#228ee5]'/><span>102&prime;</span>                      </span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><MapPin  size={16} className='text-[#228ee5]'/><span>Việt nam</span></span>
+                      <span className="flex items-center gap-2 text-sm font-normal"><Languages size={16} className='text-[#228ee5]'/><span>Chích kịch</span></span>
+                    </div>
+                  </div>
+                </div>
+
+             </div>
+              {/* Tên phim */}
+                <div className="text-[14px] mt-3 font-semibold bg-theme  w-full h-[40px] flex justify-center items-center overflow-hidden text-ellipsis hover:text-[#228EE5]"
+                style={{
+                    display: "-webkit-box",
+                    WebkitBoxOrient: "vertical",            
+                    WebkitLineClamp: 2
+                }}>
+                Jack And Joker: Người Đánh Cắp Trái Tim Tôi!
+               </div>
+               </Link>
            </div>
           </SwiperSlide>
          {/* Các nút điều hướng */}

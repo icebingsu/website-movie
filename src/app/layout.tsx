@@ -20,19 +20,40 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-    <body className={`${inter.className}`}>
-      <ThemeProvider
-        attribute="class"
-        defaultTheme="system"
-        enableSystem
-        disableTransitionOnChange
+      <body
+        className={`${inter.className} relative`}
+        style={{
+          backgroundImage: `url('/images/app/background.jpg')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
       >
-        <Header />
-        {children}
-        <Footer/>
-      </ThemeProvider>
-    </body>
-  </html>
+        <div
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundColor: 'rgba(0, 0, 0, 0.7)',
+            zIndex: 0,
+          }}
+        ></div>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <div style={{ position: 'relative', zIndex: 1 }}>
+            <Header />
+            {children}
+            <Footer />
+          </div>
+        </ThemeProvider>
+      </body>
+    </html>
+
   
   );
 }
